@@ -11,8 +11,9 @@ int main()
     
     // CRTL-D sends EOF signal
     while ( ( c = getchar() ) != EOF ){
-        // Number of Characters
-        if(c != '\n'){
+        
+        // Number of Characters - ignore new line and spaces
+        if(c != '\n' && c!= ' '){
         	count++;
         }
         
